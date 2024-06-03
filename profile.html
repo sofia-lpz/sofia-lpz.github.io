@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">User Profile</div>
+    </header>
+    <main>
+        <section class="profile">
+            <div class="profile-info">
+                <img src="./images/profile2.png" alt="User Profile Picture" class="profile-pic">
+                <h1>John Doe</h1>
+                <p>Top 4 Favourite Movies:</p>
+                <div class="favourite-movies">
+                    <div class="movie-item">
+                        <img src="./images/poster1.png" alt="Movie Title 1" class="movie-poster">
+                        <span>Movie Title 1</span>
+                    </div>
+                    <div class="movie-item">
+                        <img src="./images/poster2.png" alt="Movie Title 2" class="movie-poster">
+                        <span>Movie Title 2</span>
+                    </div>
+                    <div class="movie-item">
+                        <img src="./images/poster3.png" alt="Movie Title 3" class="movie-poster">
+                        <span>Movie Title 3</span>
+                    </div>
+                    <div class="movie-item">
+                        <img src="./images/poster4.png" alt="Movie Title 4" class="movie-poster">
+                        <span>Movie Title 4</span>
+                    </div>
+                </div>
+                <p>Kilometers Walked: 150 km</p>
+            </div>
+        </section>
+        <section class="recent-visits">
+            <h2>Most Recent Movie Location Visits</h2>
+            <div class="movie-list">
+                <div class="movie-item">
+                    <div class="movie-poster">
+                        <img src="./images/poster1.png" alt="Movie Poster">
+                    </div>
+                    <div class="movie-info">
+                        <h2>Movie Title 1</h2>
+                        <p>Visited: Location 1</p>
+                        <p>Review: Amazing place, had a great time!</p>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <div class="movie-poster">
+                        <img src="./images/poster2.png" alt="Movie Poster">
+                    </div>
+                    <div class="movie-info">
+                        <h2>Movie Title 2</h2>
+                        <p>Visited: Location 2</p>
+                        <p>Review: Beautiful scenery and memorable experience.</p>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <div class="movie-poster">
+                        <img src="./images/poster3.png" alt="Movie Poster">
+                    </div>
+                    <div class="movie-info">
+                        <h2>Movie Title 3</h2>
+                        <p>Visited: Location 3</p>
+                        <p>Review: Loved the atmosphere, felt like I was in the movie.</p>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <div class="movie-poster">
+                        <img src="./images/poster4.png" alt="Movie Poster">
+                    </div>
+                    <div class="movie-info">
+                        <h2>Movie Title 4</h2>
+                        <p>Visited: Location 4</p>
+                        <p>Review: A must-visit for any movie fan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="index.html">My stuff</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="nearme.html">Near me</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #14181c;
+    color: #d1d5da;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #1b2127;
+    border-bottom: 1px solid #2c333a;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #58a6ff;
+}
+
+main {
+    padding: 20px;
+}
+
+.profile {
+    background-color: #1f252d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.favourite-movies {
+    display: flex;
+    gap: 10px;
+}
+
+.favourite-movies .movie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favourite-movies .movie-poster {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.favourite-movies .movie-item span {
+    margin-top: 5px;
+    color: #58a6ff;
+}
+
+.recent-visits {
+    background-color: #1f252d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.recent-visits h2 {
+    text-align: center;
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
+
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.movie-item {
+    display: flex;
+    background-color: #1b2127;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movie-item .movie-poster img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-info h2 {
+    margin: 0 0 5px;
+    font-size: 1.2em;
+    color: #d1d5da;
+}
+
+.movie-info p {
+    margin: 0 0 10px;
+    font-size: 0.9em;
+    color: #9aa5b1;
+}
+
+footer {
+    background-color: #1b2127;
+    border-top: 1px solid #2c333a;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+
+footer nav ul li a:hover {
+    color: #d1d5da;
+}
+</style>

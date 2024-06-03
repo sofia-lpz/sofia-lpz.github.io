@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Filming Locations Near You</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #14181c;
+            color: #d1d5da;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #1b2127;
+            border-bottom: 1px solid #2c333a;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #58a6ff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .map-section {
+            background-color: #1f252d;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .map-section h2 {
+            text-align: center;
+            color: #58a6ff;
+            margin-bottom: 20px;
+        }
+
+        .map-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .map {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        .location-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .location-item {
+            background-color: #1b2127;
+            padding: 15px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            position: relative;
+        }
+
+        .location-item:hover {
+            background-color: #292e35;
+        }
+
+        .location-item h3 {
+            margin: 0 0 5px;
+            font-size: 1.2em;
+            color: #d1d5da;
+        }
+
+        .location-item p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #9aa5b1;
+        }
+
+        .friend-visited {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .friend-pic {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+
+        .heart-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .heart-button::before {
+            content: '♡';
+        }
+
+        .heart-button.clicked::before {
+            content: '♥';
+        }
+
+        footer {
+            background-color: #1b2127;
+            border-top: 1px solid #2c333a;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer nav ul li a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 5px 10px;
+        }
+
+        footer nav ul li a:hover {
+            color: #d1d5da;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Movie Locations Near You</div>
+    </header>
+    <main>
+        <section class="map-section">
+            <h2>Nearby Movie Filming Locations</h2>
+            <div class="map-container">
+                <img src="./images/map-placeholder.png" alt="Map" class="map">
+            </div>
+            <div class="location-list">
+                <div class="location-item">
+                    <h3>Movie Title 1</h3>
+                    <p>Location: Central Park</p>
+                    <p>Distance: 2 km</p>
+                    <p>Average Review: ⭐⭐⭐⭐☆</p>
+                    <div class="friend-visited">
+                        <img src="./images/profile1.png" alt="Friend 1" class="friend-pic">
+                        <span>John Doe</span>
+                    </div>
+                    <button class="heart-button" onclick="toggleHeart(this)"></button>
+                </div>
+                <div class="location-item">
+                    <h3>Movie Title 2</h3>
+                    <p>Location: Times Square</p>
+                    <p>Distance: 5 km</p>
+                    <p>Average Review: ⭐⭐⭐⭐☆</p>
+                    <div class="friend-visited">
+                        <img src="./images/profile1.png" alt="Friend 2" class="friend-pic">
+                        <span>Jane Smith</span>
+                    </div>
+                    <button class="heart-button" onclick="toggleHeart(this)"></button>
+                </div>
+                <div class="location-item">
+                    <h3>Movie Title 3</h3>
+                    <p>Location: Brooklyn Bridge</p>
+                    <p>Distance: 8 km</p>
+                    <p>Average Review: ⭐⭐⭐⭐☆</p>
+                    <div class="friend-visited">
+                        <img src="./images/profile3.png" alt="Friend 3" class="friend-pic">
+                        <span>Bob Johnson</span>
+                    </div>
+                    <button class="heart-button" onclick="toggleHeart(this)"></button>
+                </div>
+                <div class="location-item">
+                    <h3>Movie Title 4</h3>
+                    <p>Location: Empire State Building</p>
+                    <p>Distance: 10 km</p>
+                    <p>Average Review: ⭐⭐⭐⭐☆</p>
+                    <div class="friend-visited">
+                        <img src="./images/profile4.png" alt="Friend 4" class="friend-pic">
+                        <span>Alice Brown</span>
+                    </div>
+                    <button class="heart-button" onclick="toggleHeart(this)"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="index.html">My stuff</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="nearme.html">Near me</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+        function toggleHeart(button) {
+            button.classList.toggle('clicked');
+        }
+    </script>
+</body>
+</html>

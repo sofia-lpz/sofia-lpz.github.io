@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Location Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #14181c;
+            color: #d1d5da;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1b2127;
+            border-bottom: 1px solid #2c333a;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #58a6ff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #d1d5da;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .nav-links a:hover {
+            color: #58a6ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('none.png') no-repeat center center/cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .hero .cta-button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #58a6ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #007bff;
+        }
+
+        .features {
+            padding: 50px 20px;
+            background-color: #1f252d;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .feature {
+            background-color: #292e35;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            color: #d1d5da;
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #58a6ff;
+        }
+
+        .feature p {
+            font-size: 1em;
+            color: #9aa5b1;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #14181c;
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .cta .cta-button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #58a6ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta .cta-button:hover {
+            background-color: #007bff;
+        }
+
+        footer {
+            background-color: #1b2127;
+            padding: 20px;
+            text-align: center;
+            color: #9aa5b1;
+            border-top: 1px solid #2c333a;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Movie Location Explorer</div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="nearme.html">Near me</a>
+            <a href="friends.html">Friends</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <br>
+        <h1>Discover Movie Filming Locations</h1>
+        <p>Explore the real-life locations of your favorite movies and plan your next adventure.</p>
+        <a href="profile.html" class="cta-button">Get Started</a>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Track Your Visits</h3>
+            <p>Keep a log of all the movie filming locations you've visited and see how far you've traveled.</p>
+        </div>
+        <div class="feature">
+            <h3>Connect with Friends</h3>
+            <p>Share your experiences and see where your friends have been. Plan trips together!</p>
+        </div>
+        <div class="feature">
+            <h3>Find New Locations</h3>
+            <p>Discover new and exciting filming locations you can visit next, complete with reviews and photos.</p>
+        </div>
+        <div class="feature">
+            <h3>Share Reviews</h3>
+            <p>Write and read reviews about the locations you've visited and help other movie enthusiasts.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Join Movie Location Explorer Today</h2>
+        <p>Start your journey to explore and share the best movie filming locations around the world.</p>
+        <a href="profile.html" class="cta-button">Sign Up Now</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Movie Location Explorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

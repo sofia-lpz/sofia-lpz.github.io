@@ -1,57 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea</title>
-    <link rel="stylesheet" type="text/css" href="./public/styles/style.css">
+    <title>My Movie Reviews</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="header-title">Simple web page</div>
-        <div class="header-buttons">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Content</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contact Us</a>
+    <header>
+        <div class="logo">Movie Locations I've Visited</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search near me...">
         </div>
-    </div>
-
-    <div class="yellow">
-        <br>
-        <div class="title">Web development course!</div>
-        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia illo officia ea recusandae temporibus doloremque ab iure est. Officia vel sit consectetur pariatur rem earum voluptate? In, sequi hic.</div>
-        <br>
-        <!-- Agregue breaks en vez de padding para que se pueda agregar mas texto despues? -->
-        <br>
-    </div>
-    
-    <div class="blurb-row">
-        <div>Subscribe to our newsletter</div>
-        <div class="subscribe">
-            <input type="text" placeholder="Enter your email..">
-            <button class="yellow-button">SUBSCRIBE</button>
-        </div>
-    </div>
-
-    <div class="logo-row">
-        <div class="logo-and-text">
-            <img src="./public/images/html.png" alt="html Logo" class="logo">
-            <div class="logo-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-        </div>
-
-        <div class="logo-and-text">
-            <img src="./public/images/css.png" alt="css Logo" class="logo">
-            <div class="logo-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-        </div>
-
-        <div class="logo-and-text">
-            <img src="./public/images/js.png" alt="js Logo" class="logo">
-            <div class="logo-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-        </div>
-    </div>
-
-    <div class="footer">
-        TC123 Copyright © 2024
-    </div>
+    </header>
+    <main>
+        <section class="movie-list">
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="./images/poster1.png" alt="Movie Poster">
+                </div>
+                <div class="movie-info">
+                    <h2>Y tu Mama Tambien</h2>
+                    <p>The place where the car crash happens</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="./images/poster2.png" alt="Movie Poster">
+                </div>
+                <div class="movie-info">
+                    <h2>Inception</h2>
+                    <p>Paris bridge scene</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="./images/poster3.png" alt="Movie Poster">
+                </div>
+                <div class="movie-info">
+                    <h2>Harry Potter</h2>
+                    <p>Platform 9 3/4 at King's Cross</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="./images/poster4.png" alt="Movie Poster">
+                </div>
+                <div class="movie-info">
+                    <h2>Rocky</h2>
+                    <p>Philadelphia Museum of Art steps</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="./images/poster5.png" alt="Movie Poster">
+                </div>
+                <div class="movie-info">
+                    <h2>Lord of the Rings</h2>
+                    <p>Hobbiton in New Zealand</p>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="index.html">My Stuff</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="nearme.html">Near me</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
